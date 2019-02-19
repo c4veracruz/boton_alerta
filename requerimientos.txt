@@ -1,4 +1,4 @@
-          Protocolo de comunicacion para recepcion de alertas
+          Requerimientos de dispositivo de alerta
 
 Resumen
 
