@@ -1,0 +1,124 @@
+          Protocolo de comunicacion para recepcion de alertas
+
+Resumen
+
+   El presente documento, define el protocolo de comunicacion para la
+   recepcion de alertas provenientes desde un dispositivo o software, en
+   el Centro Estatal de Control, Comando, Comunicaciones y Computo del
+   Estado de Veracruz.
+
+1.  Definicion de protocolo
+
+   El protocolo base de comunicacion utilizado para el envio y de
+   alertas, es HTTP, a traves del metodo GET para la recepcion de los
+   datos.
+
+1.1.  Estructura de la URL
+
+   Estructura de la URL con los parametros necesarios para la recepcion
+   de alertas.
+
+   http://<direccion>:<puerto>/?empresa_id=<empresa_id>&sucursal_id=<suc
+   ursal_id>&alerta_tipo=<alerta_tipo>
+
+   La direccion y el puerto se proporcionan una vez celebrado el
+   convenio de colaboracion.
+
+1.2.  Parametros
+
+   Definicion de parametros.
+
+     +-------------+--------+--------+------------------------------+
+     |    Nombre   |  Tipo  | Tamano |         Descripcion          |
+     +-------------+--------+--------+------------------------------+
+     |  empresa_id | Cadena |   36   | Identificador de la empresa  |
+     | sucursal_id | Cadena |   36   | Identificador de la sucursal |
+     | alerta_tipo | Cadena |   10   |        Tipo de alerta        |
+     +-------------+--------+--------+------------------------------+
+
+                                  Tabla 1
+
+
+1.3.  Tipos de alerta
+
+   o  ALERTA
+
+   o  PRUEBA
+
+1.4.  Respuesta
+
+   La respuesta sera una cadena de texto con alguno de los siguientes
+   valores:
+
+   o  OK
+
+   o  EMP_NO_ENC
+
+   o  SUC_NO_ENC
+
+   o  TIP_NO_ENC
+
+   o  ERROR
+
+1.4.1.  OK
+
+   La alerta o prueba fue procesada de manera exitosa.
+
+1.4.2.  EMP_NO_ENC
+
+   Empresa no encontrada.
+
+1.4.3.  SUC_NO_ENC
+
+   Sucursal no encontrada.
+
+1.4.4.  TIP_NO_ENC
+
+   Tipo de alerta incorrecto.
+
+1.4.5.  ERROR
+
+   Error interno del servidor.  Si ocurre, es necesario que el
+   responsable del dispositivo o software emisor de la alerta reporte el
+   problema de inmediato.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Luis                     Expires August 23, 2019                [Page 4]

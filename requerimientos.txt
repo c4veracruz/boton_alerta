@@ -1,0 +1,46 @@
+          Protocolo de comunicacion para recepcion de alertas
+
+Resumen
+
+   El presente documento, lista los requerimientos que debe cumplir un
+   dispositivo, para integrarse con el servicio de recepcion de alertas
+   del Centro Estatal de Control, Comando, Comunicaciones y Computo del
+   Estado de Veracruz.
+
+1.  Requerimientos
+
+   o  Debe incorporar un nucleo programable como un microprocesador o
+      microcontrolador que lleve a cabo el procesamiento de las senales
+      y la comunicacion con el C4.
+
+   o  Debe incorporar un mecanismo para activar la emision de la alerta
+      como interruptores (botones) o sensores, entre otros.
+
+   o  Conexion a Internet por WiFi o Ethernet.  Se recomienda que de
+      preferencia la conexion sea a traves de red cableada (Ethernet),
+      ya que suele tener mas estabilidad que una red inalambrica.
+
+   o  Capacidad de enviar peticiones HTTP por metodo GET para establecer
+      comunicacion con los servidores de C4.
+
+   o  Debe tener una fuente de alimentacion electrica constante, asi
+      como algun componente que actue como sistema de proteccion ante
+      descargas y variaciones en el suministro.
+
+   o  Debe incorporar algun tipo de indicador visual cuando la alerta ha
+      sido enviada o si ha fallado.
+
+   o  Debe incorporar algun tipo de indicador visual cuando la alerta ha
+      sido enviada o si ha fallado.
+
+   o  Debe incorporar algun tipo de indicador visual si el dispositivo
+      esta experimentando problemas de conexion a Internet.
+
+   o  No debe incorporar sirenas que puedan comprometer la integridad
+      del usuario si el agresor se percata que se ha emitido una alerta.
+
+   o  Debe incorporar algun tipo de sistema de monitoreo para el
+      dispositivo, a traves del cual el usuario o el proveedor del
+      dispositivo pueda verificar su funcionamiento.  El mecanismo y el
+      proceso de monitoreo son responsabilidad directa del proveedor y
+      del usuario del dispositivo.
