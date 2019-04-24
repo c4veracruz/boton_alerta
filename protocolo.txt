@@ -9,7 +9,7 @@ Resumen
 
 1.  Definicion de protocolo
 
-   El protocolo base de comunicacion utilizado para el envio y de
+   El protocolo base de comunicacion utilizado para el envio de
    alertas, es HTTP, a traves del metodo GET para la recepcion de los
    datos.
 
@@ -21,8 +21,8 @@ Resumen
    http://<direccion>:<puerto>/?empresa_id=<empresa_id>&sucursal_id=<suc
    ursal_id>&alerta_tipo=<alerta_tipo>
 
-   La direccion y el puerto se proporcionan una vez celebrado el
-   convenio de colaboracion.
+   La direccion y el puerto, asi como un identificadorp para la realizacion
+   de pruebas, seran proporcionados a las empresas que se registren.
 
 1.2.  Parametros
 
