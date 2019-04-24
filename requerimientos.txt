@@ -28,10 +28,7 @@ Resumen
       descargas y variaciones en el suministro.
 
    o  Debe incorporar algun tipo de indicador visual cuando la alerta ha
-      sido enviada o si ha fallado.
-
-   o  Debe incorporar algun tipo de indicador visual cuando la alerta ha
-      sido enviada o si ha fallado.
+      sido enviada o si ha fallado.   
 
    o  Debe incorporar algun tipo de indicador visual si el dispositivo
       esta experimentando problemas de conexion a Internet.
@@ -41,6 +38,6 @@ Resumen
 
    o  Debe incorporar algun tipo de sistema de monitoreo para el
       dispositivo, a traves del cual el usuario o el proveedor del
-      dispositivo pueda verificar su funcionamiento.  El mecanismo y el
+      mismo pueda verificar su funcionamiento.  El mecanismo y el
       proceso de monitoreo son responsabilidad directa del proveedor y
       del usuario del dispositivo.
